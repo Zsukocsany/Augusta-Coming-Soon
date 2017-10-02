@@ -1,0 +1,118 @@
+body { background: #fcf6f8 url(../img/bg2.jpg) center  no-repeat;
+
+
+      color: #7c7679;
+      text-align: center;
+      line-height: 1;
+      font-family:'Libre Baskerville'}
+
+#center-box {margin: 0 auto;
+             width: 540px;
+             box-sizing: border-box;
+
+             }
+
+#logo {width: 155px;
+  height: 160px;
+  margin: 0 auto;
+     }
+h1 {font-size: 72px;
+    font-family: 'Italianno';
+    margin: 25px 0 15px 0;}
+
+#status {margin : 10px 0;}
+
+#status-base { border: 2px solid #e2197a;
+              width: 100%;
+               height: 20px;
+              position: relative;
+              display: block;
+              }
+#status-bar { position: absolute;
+              background: #e2197a;
+              width: 80%;
+              height: 20px;
+              display: block;}
+
+#status-text {position:relative;
+              font-size: 16px;
+             margin-top: 10px;}
+
+#status-text:before {left: 0;
+              top: 0;
+              content:'0%';
+              font-size: 16px;
+              position: absolute;
+              }
+
+#status-text:after {right: 0;
+                    top: 0;
+                   content:'100%';
+                  font-size: 16px;
+
+                  position: absolute;
+                  }
+p {font-family: 'Libre Baskerville';
+   font-size: 20px;
+   font-weight: lighter;
+  margin-top:40px;
+  margin-bottom: 10px;}
+
+input[type="text"], input[type="email"] {width: 35%;
+
+                        padding: 10px;}
+
+input[type="submit"] {
+  width: 35%;
+  background-color: #e2197a;
+  border: 2px solid #e2197a;
+  padding:5px;
+  color: #e8d4df;
+  font-family: 'Libre Baskerville';
+  font-size: 18px;
+  margin: 20px;
+
+}
+
+::-webkit-input-placeholder {color: #7c7679;
+                            font-family: 'Libre Baskerville';
+                            font-size: 12px;}
+
+ul li {display: inline-block;
+      }
+
+ul li a {display:inline-block;
+  width: 50px;
+  height: 50px;
+  float: left;}
+
+#facebook {background-image: url(../img/face.svg);
+          }
+#facebook:hover {background-image: url(../img/facepink.svg)}
+#twitter {background-image: url(../img/twitter.svg);}
+#twitter:hover {background-image: url(../img/twitterpink.svg);}
+#pinterest {background-image: url(../img/pinterest.svg);}
+#pinterest:hover {background-image: url(../img/pinterestpink.svg);}
+
+
+
+@media only screen and (max-width: 600px) {
+  #center-box {width: 100%;
+              padding: 10px;
+}
+
+}
+
+@media only screen and (max-width: 414px) {
+
+  input[type="text"], input[type="email"] {width: 100%;
+  box-sizing: border-box;
+  margin: 5px 0;}
+
+  input[type="submit"] {font-size: 12px;}
+
+  #logo {width: 100px;
+        height: 110px;}
+  h1 {font-size: 50px;}
+
+}
